@@ -10,21 +10,12 @@
 
 ## Installation
 
-### Swift Package Manager
-TUSafariActivity is available through [Swift Package Manager](https://www.swift.org/package-manager/). To install
-it, simply add the following line to your `Package.swift`:
-
-```swift
-dependencies: [.package(url: "https://github.com/davbeck/TUSafariActivity.git", from: "1.0.0")]
-```
-
 ### CocoaPods
 
-TUSafariActivity is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your `Podfile`:
-```ruby
-pod 'TUSafariActivity', '~> 1.0'
-```
+TUSafariActivity is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod 'TUSafariActivity', '~> 1.0'
 
 ## Usage
 
@@ -43,9 +34,9 @@ UIActivityViewController *activityViewController = [[UIActivityViewController al
 ### Swift
 
 ```swift
-let url = URL(string: "http://google.com")!
+let URL = NSURL(string: "http://google.com")!
 let activity = TUSafariActivity()
-let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: [activity])
+let activityViewController = UIActivityViewController(activityItems: [URL], applicationActivities: [activity])
 ```
 
 Note that you can include the activity in any `UIActivityViewController` and it will only be shown to the user if there is a URL in the activity items.
